@@ -1,0 +1,14 @@
+#wrapper {
+    margin: auto;
+    width: 80%;
+}
+
+header, footer, section, article {
+    border-style: solid;
+    border-width: 1px;
+    margin: 5px 5px 0px 0px;
+}
+
+.code {
+    width: 100%;
+}
