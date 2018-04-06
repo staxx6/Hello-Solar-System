@@ -10,10 +10,11 @@ const publicPath = path.join(__dirname, '../public');
 const app = express();
 
 hbs.registerPartials(__dirname + './../views/partials');
+hbs.registerPartials(__dirname + './../views/partials/articles');
 hbs.registerPartials(__dirname + './../views/listings/html');
 
-hbs.registerHelper('startCode', (data) => `<script type="text/plain" class="language-${data.hash.lang} code">`);
-hbs.registerHelper('endCode', () => `</script>`);
+hbs.registerHelper('startCode', (data) => `<p>${data.hash.text}</p><div class="code"><script type="text/plain" class="language-${data.hash.lang}">`);
+hbs.registerHelper('endCode', () => `</script></div>`);
 
 app.use(express.static(publicPath));
 
