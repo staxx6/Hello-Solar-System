@@ -1,8 +1,6 @@
 #wrapper {
     margin: auto;
     width: 900px;
-    background-color: #F7F7F8;
-    padding: 10px 10px 10px 10px;
 }
 
 /* * {
@@ -12,7 +10,13 @@
 } */
 
 body {
-    background-color: #E7E7E8;
+    background-color: #C7C7C8;
+}
+
+article {
+    background-color: #F7F7F8;
+    padding: 10px 10px 10px 10px;
+    margin: 25px 25px 0 0;
 }
 
 img {
