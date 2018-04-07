@@ -19,6 +19,7 @@ img {
     display: block;
     margin-left: auto;
     margin-right: auto;
+    margin-bottom: 25px;
 }
 
 header, footer {
@@ -46,6 +47,10 @@ hr {
     background-color: #ff9933;
     padding: 5px 5px 5px 10px;
     margin-bottom: 25px;
+}
+
+.listing-text {
+    margin-bottom: -4px;
 }
 
 .source {

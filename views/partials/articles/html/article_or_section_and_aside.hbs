@@ -1,4 +1,4 @@
-<div class="title" id="article-or-section">
+<div class="title" id="article-or-section-and-aside">
     <h2>Article or Section</h2>
     <h4>> HTML</h4>
 </div>
@@ -6,7 +6,7 @@
 <p>A <em>section</em> is used to group different <em>articles</em> into different
     purposes or subjects, or to define the different sections of a single <em>article</em>.</p>
 
-{{{ startCode lang="html" text="Example: 1.0"}}}
+{{{ startCode lang="html" text="Example:"}}}
     <section id="content">
         <article>
             <h2>Hello, I'm a article</h2>
@@ -20,7 +20,20 @@
 {{{ endCode }}}
 
 <img src="imgs/article-or-section.png" alt="An example of section and article"></img>
-<!-- <p>Source: <a href="https://stackoverflow.com/a/24764861">https://stackoverflow.com/a/24764861</a></p> -->
+
+<p>The <em>aside</em> tag shows content related to parent content. For example a
+    a quotation inside a article</p>
+
+{{{ startCode lang="html" text="Example:"}}}
+        <article>
+            <h2>Hello, I'm a article</h2>
+            <p>and I'm inside a section</p>
+            <aside>
+                <h4>From Iron Man</h4>
+                <p>2018</p>
+            </aside>
+        </article>
+{{{ endCode }}}
 
 <section class="source">
     Source:

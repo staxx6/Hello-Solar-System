@@ -17,15 +17,24 @@
         {{> header }}
         <nav>
             <ul>
-                <li><a href="#article-or-section">Article or Section</a></li>
-                <li><a href="#box-model">Box-Model</a></li>
+                <ul>
+                    HTML
+                    <li><a href="#article-or-section-and-aside">Article or Section</a></li>
+                    <li><a href="#address-tag">Address tag</a></li>
+                </ul>
+                <ul>
+                    CSS
+                    <li><a href="#box-model">Box-Model</a></li>
+                </ul>
             </ul>
         </nav>
         <div id="wrapper">
 
-            {{> article_or_section }}
+            {{> article_or_section_and_aside }}
             <hr>
             {{> box_model }}
+            <hr>
+            {{> address }}
 
         </div>
         {{> footer }}

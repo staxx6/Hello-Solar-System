@@ -14,7 +14,7 @@ hbs.registerPartials(__dirname + './../views/partials/articles/html');
 hbs.registerPartials(__dirname + './../views/partials/articles/css');
 hbs.registerPartials(__dirname + './../views/listings/html');
 
-hbs.registerHelper('startCode', (data) => `<p>${data.hash.text}</p><div class="code"><script type="text/plain" class="language-${data.hash.lang}">`);
+hbs.registerHelper('startCode', (data) => `<p class="listing-text">${data.hash.text}</p><div class="code"><script type="text/plain" class="language-${data.hash.lang}">`);
 hbs.registerHelper('endCode', () => `</script></div>`);
 
 app.use(express.static(publicPath));
