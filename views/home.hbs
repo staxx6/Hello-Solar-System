@@ -14,13 +14,21 @@
                 <script src="libs/prism.js"></script>
     </head>
     <body>
+        {{> header }}
+        <nav>
+            <ul>
+                <li><a href="#article-or-section">Article or Section</a></li>
+                <li><a href="#box-model">Box-Model</a></li>
+            </ul>
+        </nav>
         <div id="wrapper">
-            {{> header }}
 
             {{> article_or_section }}
+            <hr>
+            {{> box_model }}
 
-            {{> footer }}
         </div>
+        {{> footer }}
 
         <script src="libs/prism.js"></script>
     </body>
