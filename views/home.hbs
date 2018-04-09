@@ -21,6 +21,7 @@
                     HTML
                     <li><a href="#article-or-section-and-aside">Article or Section</a></li>
                     <li><a href="#address-tag">Address tag</a></li>
+                    <li><a href="#description-list">Description list</a></li>
                 </ul>
                 <ul>
                     CSS
@@ -28,15 +29,16 @@
                 </ul>
             </ul>
         </nav>
-        <div id="wrapper">
+        <main>
 
             {{> article_or_section_and_aside }}
             {{> box_model }}
             {{> address }}
+            {{> description_list }}
 
-        </div>
+        <main>
+
         {{> footer }}
-
         <script src="libs/prism.js"></script>
     </body>
 </html>

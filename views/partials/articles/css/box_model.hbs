@@ -1,23 +1,39 @@
 <article>
     <div class="title" id="box-model">
-        <h2>Box-Model</h2>
+        <h2>Box-Model <h2>
         <h4>> CSS</h4>
+        <span class="go-top"><a href="#">&#xe110;</a></span>
+    </div>
+
+    <div class="center">
+        <figure>
+            <img src="imgs/box-model.svg" alt="The box model"></img>
+            <figcaption>Box model <sup><a href="#box-model-source">{1}</a></sup></figcaption>
+        </figure>
     </div>
 
     {{{ startCode lang="css" text="Example: 1.0"}}}
-        .something {
-            margin: 5px 5px 10px 10px; // 1.top 2.right 3.bottom 4.
-            // ...
-        }
+        .box1 { margin: 0px 0px 20px 40px; } /* 1.top 2.right 3.bottom 4.left */
+        .box2 { margin: 25px 50px 0px 0px; }
     {{{ endCode }}}
 
-    <img src="imgs/box-model.png" alt="The box model"></img>
-    <!-- <p>Source: <a href="http://wiki.selfhtml.org/wiki/CSS/Box-Modell">http://wiki.selfhtml.org/wiki/CSS/Box-Modell</a></p> -->
+    {{{ startHTMLex }}}
+        <div style="background-color: lightgrey; display: inline-block;"><div style="margin: 0px 0px 20px 40px; background-color: red; width: 50px; height: 50px;">BOX 1</div></div>
+        <br>
+        <div style="background-color: lightgreen; display: inline-block;"><div style="margin: 25px 50px 0px 0px; background-color: red; width: 50px; height: 50px;">BOX 2</div></div>
+    {{{ endHTMLex }}}
 
-    <section class="source">
-        Source:
-        <ol>
-            <li>https://stackoverflow.com/a/24764861</li>
-        </ol>
-    </section>
+    <footer class="footer-page">
+        <section id="box-model-source" class="source">
+            Source:
+            <ol>
+                <li>Picture: <a href="https://stackoverflow.com/a/24764861">https://stackoverflow.com/a/24764861</a></li>
+            </ol>
+        </section>
+        <!-- helper here -->
+        <section class="article-info">
+            <a href="#" rel="author">Simon Oczadly</a> |
+            <time datetime="2018-04-09"> 09.04.2018</time>
+        </section>
+    </footer>
 </article>

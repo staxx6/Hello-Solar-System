@@ -1,6 +1,10 @@
-#wrapper {
+main {
     margin: auto;
     width: 900px;
+}
+
+h1 {
+    /* float: left; */
 }
 
 /* * {
@@ -19,16 +23,31 @@ article {
     margin: 25px 25px 0 0;
 }
 
-img {
+/* img {
     display: block;
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 25px;
+} */
+
+figure {
+    margin: 0 auto;
+    display: inline-block;
+    text-align: center;
+
+    /* border-style: dashed;
+    border-width: 1px;
+    border-color: blue; */
+}
+
+figcaption {
+    text-align: right;
+    padding: 5px 25px;
 }
 
 header, footer {
     background-color: #AAA;
-    padding: 25px;
+    padding: 5px 5px 5px 5px;
 }
 
 nav {
@@ -37,8 +56,13 @@ nav {
     background-color: #999;
 }
 
-footer {
+#footer-page {
     margin: 50px 0 0 0;
+    padding: 25px;
+}
+
+.footer-article {
+
 }
 
 hr {
@@ -58,16 +82,50 @@ hr {
 }
 
 .source {
-    margin: 25px 25px 0 0;
+    margin: 0px 25px 0 0;
     /* border-style: solid;
     border-width: 1px; */
 }
 
 .code {
     width: 100%;
-    margin: 0px 0 50px 0;
+    margin: 0px 0 20px 0;
+}
+
+.code-html {
+    color: #e2777a;
+    background-color: rgb(45, 45, 45);
+    padding: 1px 2px 1px 2px;
 }
 
 .hide {
     display: none;
+}
+
+.html-example {
+    border-style: dashed;
+    border-width: 1px;
+    background-color: white;
+    margin-bottom: 25px;
+}
+
+.no-css {
+    all: initial;
+    * {
+      all: unset;
+    }
+}
+
+.test-border {
+    border-style: dashed;
+    border-width: 1px;
+}
+
+.center {
+    margin: 0 auto;
+    text-align: center;
+}
+
+.go-top {
+    /* float: right; */
 }

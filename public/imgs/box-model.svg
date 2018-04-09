@@ -1,0 +1,57 @@
+<svg width="600" height="500" viewBox="0 0 600 500" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+  <title>Box-Modell</title>
+  <defs>
+    <style>
+	  * {
+        stroke-width: 1px;
+	  }
+	  text {
+	    font-size: 20px;
+	  }
+	  .klein {
+	    font-size: 15px;
+	  }	  
+	  .code {	
+		font-family: monospace;
+	  }
+	  .heading {
+	    font-size: 36px;
+	  }
+	 </style> 
+	 <symbol id="pfeil">
+	   <path d="M1,10 h120" stroke="#666" stroke-width="1"/>
+	   <path d="M121,10 l-10,3 v-6z" fill="#666" stroke="#666" stroke-width="1"/>
+	 </symbol>
+  </defs>
+  <g id="box">
+    <desc>Übersicht des Box-Modells mit seinen Bestandteilen</desc> 
+
+	<use xlink:href="#pfeil" transform="translate(-40,70)" />
+    <text class="code" x="10" y="70">top</text>	
+	<use xlink:href="#pfeil" transform="translate(529,-50) rotate(90)" />
+    <text class="code" transform="translate(500,70) rotate(-90)">right</text>	
+	<use xlink:href="#pfeil" transform="translate(640,420) scale(-1,1)" />
+    <text class="code" x="520" y="450">bottom</text>		
+	<use xlink:href="#pfeil" transform="translate(70,555) rotate(-90)" />
+    <text class="code" transform="translate(70,480) rotate(-90)">left</text>	
+	
+	
+    <rect x="80" y="80" height="350" width="440" fill="#ebf5d7" stroke="#8db243" />
+	<text x="100" y="105"><tspan class="code">margin </tspan>(Außenabstand)</text>		
+	<rect x="115" y="115" height="280" width="370" fill="#999" stroke="none" />
+	<text x="150" y="135"><tspan class="code">border </tspan>(Rahmen)</text>		
+	<rect x="145" y="145" height="220" width="310" fill="#ffebe6 " stroke="none" />
+	<text x="180" y="165"><tspan class="code">padding </tspan>(Innenabstand)</text>	
+    <rect x="180" y="180" height="150" width="240" fill="#ffd6cc" stroke="#c32e04" stroke-dasharray="2%, 2%"  />
+	<use xlink:href="#pfeil" transform="translate(298,200)" />
+	<use xlink:href="#pfeil" transform="translate(302,200) scale(-1,1)" />
+	<text class="klein" x="230" y="200"><tspan class="code">width </tspan>(Breite)</text>	
+	<use xlink:href="#pfeil" transform="translate(220,205) rotate(90)" />
+	<use xlink:href="#pfeil" transform="translate(200,300) rotate(-90)" />	
+	<text class="klein" transform="translate(200,325) rotate(-90)" ><tspan class="code">height </tspan>(Höhe)</text>	
+	<text x="250" y="260" class="heading">Inhalt</text>
+	
+	
+
+  </g>	
+</svg>

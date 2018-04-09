@@ -2,10 +2,11 @@
     <div class="title" id="article-or-section-and-aside">
         <h2>Article or Section</h2>
         <h4>> HTML</h4>
+        <span class="go-top"><a href="#">&#xe110;</a></span>
     </div>
 
-    <p>A <em>section</em> is used to group different <em>articles</em> into different
-        purposes or subjects, or to define the different sections of a single <em>article</em>.</p>
+    <p>A {{{ htmlCode text="<section>" }}} is used to group different {{{ htmlCode text="<article>" }}} into different
+        purposes or subjects, or to define the different sections of a single {{{ htmlCode text="<article>" }}}.</p>
 
     {{{ startCode lang="html" text="Example:"}}}
         <section id="content">
@@ -20,7 +21,13 @@
         </section>
     {{{ endCode }}}
 
-    <img src="imgs/article-or-section.png" alt="An example of section and article"></img>
+    <div class="center">
+        <figure>
+            <img src="imgs/article-or-section.png" alt="An example of section and article"></img>
+            <figcaption>Article and section example<sup><a href="#article-or-section-source">{1}</a></sup></figcaption>
+        </figure>
+    </div>
+
 
     <p>The <em>aside</em> tag shows content related to parent content. For example a
         a quotation inside a article</p>
@@ -36,10 +43,10 @@
             </article>
     {{{ endCode }}}
 
-    <section class="source">
+    <section id="article-or-section-source" class="source">
         Source:
         <ol>
-            <li><a href="https://stackoverflow.com/a/24764861">https://stackoverflow.com/a/24764861</a></li>
+            <li><a href="https://stackoverflow.com/a/24764861">Picture: https://stackoverflow.com/a/24764861</a></li>
         </ol>
     </section>
 </article>
