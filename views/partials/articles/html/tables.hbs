@@ -1,0 +1,94 @@
+<article>
+    <div class="title" id="tables">
+        <h2>Tables</h2>
+        <h4>> HTML</h4>
+        <span class="go-top"><a href="#">&#xe110;</a></span>
+    </div>
+
+    {{{ startCode lang="html" text="Example"}}}
+        <!-- With css borders and bg color -->
+        <table>
+            <caption>Website files</caption>
+            <thead>
+                <tr>
+                    <th>HTML</th>
+                    <th>CSS</th>
+                    <th>JavaScript</th>
+                </tr>
+            </thead>
+            <tfoot>
+                <tr>
+                    <th rowspan="2">2 Files</th>
+                    <th>2 Files</th>
+                    <th>2 Files</th>
+                </tr>
+                <tr>
+                    <th colspan="2">4 Files</th>
+                </tr>
+            </tfoot>
+            <tbody>
+                <colgroup>
+                    <col span="2" style="background-color: lightgreen;">
+                    <col style="background-color: snow;" >
+                </colgroup>
+                <tr>
+                    <td>index.html</td>
+                    <td>style.css</td>
+                    <td>server.js</td>
+                </tr>
+                <tr>
+                    <td>hello.html</td>
+                    <td>itstyle.css</td>
+                    <td>config.js</td>
+                </tr>
+            </tbody>
+        </table>
+    {{{ endCode }}}
+
+    {{{ startHTMLex }}}
+        <style>
+            table, td, th { border: 1px solid gray; }
+            thead, tfoot { background-color: lightgrey; }
+        </style>
+        <table>
+            <caption>
+                Website files
+                <details>Some text is here. Isn't it nice? It does some br</details>
+                <summary>The summary</summary>
+            </caption>
+            <thead>
+                <tr>
+                    <th>HTML</th>
+                    <th>CSS</th>
+                    <th>JavaScript</th>
+                </tr>
+            </thead>
+            <tfoot>
+                <tr>
+                    <th rowspan="2">2 Files</th>
+                    <th>2 Files</th>
+                    <th>2 Files</th>
+                </tr>
+                <tr>
+                    <th colspan="2">4 Files</th>
+                </tr>
+            </tfoot>
+            <tbody>
+                <colgroup>
+                    <col span="2" style="background-color: lightgreen;">
+                    <col style="background-color: snow;" >
+                </colgroup>
+                <tr>
+                    <td>index.html</td>
+                    <td>style.css</td>
+                    <td>server.js</td>
+                </tr>
+                <tr>
+                    <td>hello.html</td>
+                    <td>itstyle.css</td>
+                    <td>config.js</td>
+                </tr>
+            </tbody>
+        </table>
+    {{{ endHTMLex }}}
+</article>

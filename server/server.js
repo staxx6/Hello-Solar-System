@@ -24,6 +24,18 @@ hbs.registerHelper('endCode', () => `</script></div>`);
 
 hbs.registerHelper('startHTMLex', () => `Result:<div class="html-example"><div class="no-css">`);
 hbs.registerHelper('endHTMLex', () => `</div></div>`);
+hbs.registerHelper('sourceList', (items, options) => {
+    console.log(items);
+
+    let out = '<ul>';
+
+    for(let i = 0; i < items.length; i++) {
+        //out = out + '<li>' + options.fn(items[i]) + '</li>';
+        out = out + '<li>' + items[i] + '</li>';
+    }
+
+    return out + '</ul>';
+});
 
 app.use(express.static(publicPath));
 
