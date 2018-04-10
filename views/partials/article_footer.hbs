@@ -1,12 +1,13 @@
 <footer class="footer-page">
+    {{#if sources}}
     <section id="box-model-source" class="source">
-        Source:
-        <ol>
+        Sources:
             {{#sourceList sources}}{{source}}{{/sourceList}}
-        </ol>
     </section>
+    {{/if}}
     <section class="article-info">
         <a href="#" rel="author">{{ author }}</a> |
         <time datetime="{{ dateMachine }}"> {{ date }}</time>
     </section>
-</footer>`
+    {{{ goTop }}}
+</footer>

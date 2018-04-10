@@ -1,9 +1,5 @@
 <article>
-    <div class="title" id="tables">
-        <h2>Tables</h2>
-        <h4>> HTML</h4>
-        <span class="go-top"><a href="#">&#xe110;</a></span>
-    </div>
+    {{> article_header titleClass="title" title="Tables" id="tables" lang="HTML"}}
 
     {{{ startCode lang="html" text="Example"}}}
         <!-- With css borders and bg color -->
@@ -91,4 +87,6 @@
             </tbody>
         </table>
     {{{ endHTMLex }}}
+
+    {{> article_footer author="Simon Oczadly" date="10.04.2018"}}
 </article>

@@ -23,19 +23,14 @@
         <div style="background-color: lightgreen; display: inline-block;"><div style="margin: 25px 50px 0px 0px; background-color: red; width: 50px; height: 50px;">BOX 2</div></div>
     {{{ endHTMLex }}}
 
-    {{> article_footer sources="['https://stackoverflow.com/a/24764861']"}}
-
-    <footer class="footer-page">
-        <section id="box-model-source" class="source">
-            Source:
-            <ol>
-                <li>Picture: <a href="https://stackoverflow.com/a/24764861">https://stackoverflow.com/a/24764861</a></li>
-            </ol>
-        </section>
-        <!-- helper here -->
-        <section class="article-info">
-            <a href="#" rel="author">Simon Oczadly</a> |
-            <time datetime="2018-04-09"> 09.04.2018</time>
-        </section>
-    </footer>
+    {{> article_footer author="Simon Oczadly" date="10.04.2018"
+    sources="
+        [{
+            \"des\": \"Picture:\",
+            \"link\": \"https://stackoverflow.com/a/24764861/\"
+        },{
+            \"des\": \"Test:\",
+            \"link\": \"https://stackoverflow.com/\"
+        }]
+    "}}
 </article>
