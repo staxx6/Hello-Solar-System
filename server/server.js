@@ -14,9 +14,8 @@ hbs.registerPartials(__dirname + './../views/partials/articles/html');
 hbs.registerPartials(__dirname + './../views/partials/articles/css');
 hbs.registerPartials(__dirname + './../views/listings/html');
 
-const parseTextToHtml = (string) => {
-    return string.replace('<', '&lt;').replace('>', '&gt;');
-}
+const parseTextToHtml = (string) => string.replace('<', '&lt;').replace('>', '&gt;');
+
 hbs.registerHelper('htmlCode', (data) => `<code class="code-html">${parseTextToHtml(data.hash.text)}</code>`);
 
 hbs.registerHelper('startCode', (data) => `<p class="listing-text">${data.hash.text}</p><div class="code"><script type="text/plain" class="language-${data.hash.lang}">`);

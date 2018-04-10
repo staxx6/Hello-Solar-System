@@ -45,9 +45,22 @@ figcaption {
     padding: 5px 25px;
 }
 
-header, footer {
+header {
+    background-color: #ff9933;
+}
+
+footer {
     background-color: #AAA;
+}
+
+header, footer {
     padding: 5px 5px 5px 5px;
+}
+
+article>header {
+    background-color: #ff9933;
+    padding: 5px 5px 5px 10px;
+    margin-bottom: 25px;
 }
 
 nav {
@@ -67,10 +80,11 @@ nav {
 
 hr {
     border: none;
-    height: 5px;
+    height: 3px;
     background-color: #999;
 }
 
+    /* deprecated */
 .title {
     background-color: #ff9933;
     padding: 5px 5px 5px 10px;
@@ -90,6 +104,10 @@ hr {
 .code {
     width: 100%;
     margin: 0px 0 20px 0;
+}
+
+pre {
+    max-height: 750px;
 }
 
 .code-html {
@@ -128,4 +146,13 @@ hr {
 
 .go-top {
     /* float: right; */
+}
+
+a:link, a:visited {
+    color: #b7580b;
+}
+
+a:hover {
+    color: #d17a34;
+    text-decoration: none;
 }
