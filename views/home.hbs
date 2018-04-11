@@ -20,29 +20,35 @@
         <nav>
             <ul>
                 <ul>
-                    HTML
-                    <li><a href="#article-or-section-and-aside">Article or Section</a></li>
-                    <li><a href="#address-tag">Address tag</a></li>
-                    <li><a href="#description-list">Description list</a></li>
-                    <li><a href="#tables">Tables</a></li>
-                    <li><a href="#images">Images</a></li>
-                    <li><a href="#forms">Forms</a></li>
+                    <p>
+                        <span>HTML</span>
+                        <li><a href="#article-or-section-and-aside">Article or Section</a></li> |
+                        <li><a href="#address-tag">Address tag</a></li> |
+                        <li><a href="#description-list">Description list</a></li> |
+                        <li><a href="#tables">Tables</a></li> |
+                        <li><a href="#images">Images</a></li> |
+                        <li><a href="#forms">Forms</a></li>
+                    </p>
                 </ul>
                 <ul>
-                    CSS
-                    <li><a href="#box-model">Box-Model</a></li>
+                    <p>
+                        <span>CSS</span>
+                        <li><a href="#box-model">Box model</a></li> |
+                        <li><a href="#box-design">Box design</a></li>
+                    </p>
                 </ul>
             </ul>
         </nav>
         <main>
 
-            {{> article_or_section_and_aside }}
             {{> box_model }}
+            {{> article_or_section_and_aside }}
             {{> address }}
             {{> description_list }}
             {{> tables }}
             {{> images }}
             {{> forms }}
+            {{> box_design}}
         </main>
 
         {{> footer }}

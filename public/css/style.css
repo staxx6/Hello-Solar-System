@@ -1,26 +1,47 @@
+* {
+    color: antiqueWhite;
+}
+
+body {
+    background-color: #1C1F26;
+}
+
+header {
+    background-color: #020E18;
+    padding: 10px;
+}
+
+nav {
+    padding: 15px 3px 3px 2px;
+    margin-bottom: 25px;
+    background-color: #13171F;
+}
+
 main {
-    margin: auto;
+    margin: 25px auto;
     width: 900px;
 }
 
-h1 {
-    /* float: left; */
-}
-
-/* * {
-    border-style: solid;
-    border-width: 1px;
-    margin: 5px 5px 0px 0px;
-} */
-
-body {
-    background-color: #C7C7C8;
+footer {
+    background-color: #13171F;
 }
 
 article {
-    background-color: #F7F7F8;
-    padding: 10px 10px 10px 10px;
-    margin: 25px 25px 0 0;
+    background-color: #24262D  ;
+    padding: 10px;
+    margin: 25px 0 0 0;
+}
+
+h1 {
+    font-size: 32pt;
+}
+
+h2 {
+    font-size: 18pt;
+}
+
+h1, h2 {
+    color: #FFC338;
 }
 
 /* img {
@@ -45,28 +66,38 @@ figcaption {
     padding: 5px 25px;
 }
 
-header {
-    background-color: #ff9933;
-}
-
-footer {
-    background-color: #AAA;
-}
-
 header, footer {
-    padding: 5px 5px 5px 5px;
+    padding: 5px;
 }
 
 article>header {
-    background-color: #ff9933;
     padding: 5px 5px 5px 10px;
     margin-bottom: 25px;
 }
 
-nav {
-    padding: 15px 3px 3px 2px;
-    margin-bottom: 25px;
-    background-color: #999;
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav a {
+    /* display: block; */
+    width: 60px;
+}
+
+nav p {
+    margin: 10px 0 0 0;
+}
+
+nav li {
+    display: inline-block;
+}
+
+span {
+    display: inline;
+    margin: 0;
+    padding: 0;
 }
 
 #footer-page {
@@ -82,13 +113,6 @@ hr {
     border: none;
     height: 3px;
     background-color: #999;
-}
-
-    /* deprecated */
-.title {
-    background-color: #ff9933;
-    padding: 5px 5px 5px 10px;
-    margin-bottom: 25px;
 }
 
 .listing-text {
@@ -130,7 +154,7 @@ pre {
 .no-css {
     all: initial;
     * {
-      all: unset;
+      all: initial;
     }
 }
 

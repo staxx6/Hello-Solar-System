@@ -1,27 +1,33 @@
 <article>
-    <div class="title" id="box-model">
-        <h2>Box-Model <h2>
-        <h4>> CSS</h4>
-        <span class="go-top"><a href="#">&#xe110;</a></span>
-    </div>
+    {{> article_header title="Box model" id="box-model" lang="CSS"}}
+    <main>
+        <div class="center">
+            <figure>
+                <img src="imgs/box-model.svg" alt="The box model"></img>
+                <figcaption>Box model <sup><a href="#box-model-source">{1}</a></sup></figcaption>
+            </figure>
+        </div>
 
-    <div class="center">
-        <figure>
-            <img src="imgs/box-model.svg" alt="The box model"></img>
-            <figcaption>Box model <sup><a href="#box-model-source">{1}</a></sup></figcaption>
-        </figure>
-    </div>
+        {{{ startCode lang="css" text="Example: 1.0"}}}
+            .box1 { margin: 0px 0px 20px 40px; } /* 1.top 2.right 3.bottom 4.left CLOCKWISE*/
+            .box2 { margin: 25px 50px 0px 0px; }
+            .box3 { margin: 5px 15px; } /* top AND bottom 5px; left AND right 15px */
+        {{{ endCode }}}
 
-    {{{ startCode lang="css" text="Example: 1.0"}}}
-        .box1 { margin: 0px 0px 20px 40px; } /* 1.top 2.right 3.bottom 4.left */
-        .box2 { margin: 25px 50px 0px 0px; }
-    {{{ endCode }}}
+        {{{ startHTMLex }}}
+            <div style="background-color: lightgrey; display: inline-block;"><div style="margin: 0px 0px 20px 40px; background-color: red; width: 50px; height: 50px;">BOX 1</div></div>
+            <br>
+            <div style="background-color: lightgreen; display: inline-block;"><div style="margin: 25px 50px 0px 0px; background-color: red; width: 50px; height: 50px;">BOX 2</div></div>
+            <br>
+            <div style="background-color: lightblue; display: inline-block;"><div style="margin: 5px 15px; background-color: red; width: 50px; height: 50px;">BOX 3</div></div>
+        {{{ endHTMLex }}}
 
-    {{{ startHTMLex }}}
-        <div style="background-color: lightgrey; display: inline-block;"><div style="margin: 0px 0px 20px 40px; background-color: red; width: 50px; height: 50px;">BOX 1</div></div>
-        <br>
-        <div style="background-color: lightgreen; display: inline-block;"><div style="margin: 25px 50px 0px 0px; background-color: red; width: 50px; height: 50px;">BOX 2</div></div>
-    {{{ endHTMLex }}}
+        Mentionable:
+        <ol>
+            <li>Collapsing margins - if margin-top and margin-bottom fight</li>
+            <li>New box model {{{ htmlCode text="box-sizing: border-box" }}} widht = content + padding + border</li>
+        </ol>
+    </main>
 
     {{> article_footer author="Simon Oczadly" date="10.04.2018"
     sources="
