@@ -1,22 +1,22 @@
 <article>
     {{> article_header title="Images" id="images" lang="HTML"}}
+    <main>
+        {{{ startCode lang="html" text="Example"}}}
+            <img src="imgs/img-map.jpg" alt="Two click me pictures" usemap="#mapEx">
+            <map name="mapEx">
+                <!-- coords: x1, y1, x2, y2 ... xn, yn -->
+                <area shape="rect" coords="0, 0,256,128" href="#" title="Go to top">
+                <area shape="rect" coords="0, 128,256,256" href="#footer-page" title="Go to footer">
+            </map>
+        {{{ endCode }}}
 
-    {{{ startCode lang="html" text="Example"}}}
-        <img src="imgs/img-map.jpg" alt="Two click me pictures" usemap="#mapEx">
-        <map name="mapEx">
-            <!-- coords: x1, y1, x2, y2 ... xn, yn -->
-            <area shape="rect" coords="0, 0,256,128" href="#" title="Go to top">
-            <area shape="rect" coords="0, 128,256,256" href="#footer-page" title="Go to footer">
-        </map>
-    {{{ endCode }}}
-
-    {{{ startHTMLex }}}
-        <img src="imgs/img-map.jpg" alt="Two click me pictures" usemap="#mapEx">
-        <map name="mapEx">
-            <area shape="rect" coords="0, 0,256,128" href="#" title="Go to top">
-            <area shape="rect" coords="0, 128,256,256" href="#footer-page" title="Go to footer">
-        </map>
-    {{{ endHTMLex }}}
-
+        {{{ startHTMLex }}}
+            <img src="imgs/img-map.jpg" alt="Two click me pictures" usemap="#mapEx">
+            <map name="mapEx">
+                <area shape="rect" coords="0, 0,256,128" href="#" title="Go to top">
+                <area shape="rect" coords="0, 128,256,256" href="#footer-page" title="Go to footer">
+            </map>
+        {{{ endHTMLex }}}
+    </main>
     {{> article_footer author="Simon Oczadly" date="10.04.2018"}}
 </article>

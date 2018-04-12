@@ -32,7 +32,7 @@ hbs.registerHelper('sourceList', (items) => {
     return out + '</ol>';
 });
 
-hbs.registerHelper('goTop', () => `<span class="go-top"><a href="#">&#xe110;</a></span>`);
+// hbs.registerHelper('goTop', () => `<span class="go-top"><a href="#">&#xe110;</a></span>`);
 
 app.use(express.static(publicPath));
 

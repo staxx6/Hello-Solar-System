@@ -1,9 +1,6 @@
 <article>
-    <div class="title" id="description-list">
-        <h2>Description list</h2>
-        <h4>> HTML</h4>
-        <span class="go-top"><a href="#">&#xe110;</a></span>
-    </div>
+    {{> article_header title="Description list" id="description-list" lang="HTML"}}
+    <main>
 
     {{{ startCode lang="html" text="Example:"}}}
         <h1>Book informations</h1>
@@ -16,4 +13,6 @@
             <dd>15,00€</dd>
         </dl>
     {{{ endCode }}}
+    </main>
+    {{> article_footer author="Simon Oczadly" date="10.04.2018"}}
 </article>

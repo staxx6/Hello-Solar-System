@@ -1,76 +1,32 @@
 <article>
     {{> article_header title="Forms" id="forms" lang="HTML"}}
+    <main>
+        The attributes for {{{ htmlCode text="<input>" }}}:
+        <ul>
+            <li>{{{ htmlCode text="name" }}} gives the object a variable name.</li>
+            <li>{{{ htmlCode text="value" }}} set a standard text inside the field.<br></li>
+        </ul>
 
-    The attributes for {{{ htmlCode text="<input>" }}}:
-    <ul>
-        <li>{{{ htmlCode text="name" }}} gives the object a variable name.</li>
-        <li>{{{ htmlCode text="value" }}} set a standard text inside the field.<br></li>
-    </ul>
+        The attributes for {{{ htmlCode text="<textarea>" }}}:
+        <ul>
+            <li>{{{ htmlCode text="wrap=\"hard\"" }}} usually textarea dosn't send newlines
+                (except user hits ENTER) with <em>wrap="hard"</em> it does</li>
+        </ul>
 
-    The attributes for {{{ htmlCode text="<textarea>" }}}:
-    <ul>
-        <li>{{{ htmlCode text="wrap=\"hard\"" }}} usually textarea dosn't send newlines
-            (except user hits ENTER) with <em>wrap="hard"</em> it does</li>
-    </ul>
+        The attributes for {{{ htmlCode text="<select>" }}}:
+        <ul>
+            <li>{{{ htmlCode text="multiple" }}} enables multi select</li>
+            <li>{{{ htmlCode text="selected=\"value\"" }}} standard select</li>
+        </ul>
 
-    The attributes for {{{ htmlCode text="<select>" }}}:
-    <ul>
-        <li>{{{ htmlCode text="multiple" }}} enables multi select</li>
-        <li>{{{ htmlCode text="selected=\"value\"" }}} standard select</li>
-    </ul>
+        <hr>
 
-    <hr>
+        {{{ htmlCode text="<input type=\"file\" accept=\"image/*\"" }}} filters
+        your selectable files but still need to be checked by your web server.
 
-    {{{ htmlCode text="<input type=\"file\" accept=\"image/*\"" }}} filters
-    your selectable files but still need to be checked by your web server.
+        <hr>
 
-    <hr>
-
-    {{{ startCode lang="html" text="Examples:"}}}
-    <form>
-        Name: <input type="text" name="yourName" placeholder="Ichder" size="30" maxlength="30" autocomplete="off"><br>
-        Password: <input type="password" name="pw" value="password" size="30" maxlength="10" autocomplete="new-password"><br>
-        Comment: <textarea name="cmt" rows="6" cols="50" maxlength="2500" wrap="soft">Multi line text field</textarea><br>
-        Choose:
-        <select name="takeOne">
-            <option value="val1">HTML</option>
-            <option value="val2">CSS</option>
-            <option value="val3">JS</option>
-        </select>
-        <select multiple name="takeTwo" size="2" selected="val5">
-            <option value="val4">HTML</option>
-            <option value="val5">CSS</option>
-            <option value="val6">JS</option>
-        </select>
-        <select multiple name="takeThree" size="6">
-            <optgroup label="Group 1">
-                <option value="val7">HTML</option>
-                <option value="val8">CSS</option>
-                <option value="val9">JS</option>
-            </optgroup>
-            <optgroup label="Group 2">
-                <option value="val10">html</option>
-                <option value="val11">css</option>
-                <option value="val12">js</option>
-            </optgroup>
-        </select></br>
-        Choose your radio:
-        <input type="radio" name="radio" value="r1" id="firstId">
-        <label for="firstId">First</label>
-        <input type="radio" name="radio" value="r2" id="secondId">
-        <label for="secondId">Second</label><br>
-        Choose your box:
-        <input type="checkbox" name="box" value="b1" id="BfirstId">
-        <label for="BfirstId">First</label>
-        <input type="checkbox" name="box" value="b2" id="BsecondId">
-        <label for="BsecondId">Second</label>
-    </form>
-    <form method="post" enctype="multipart/form-data">
-        Your file: <input type="file" name="yourFile" accept="image/*">
-    </form>
-    {{{ endCode }}}
-
-    {{{ startHTMLex }}}
+        {{{ startCode lang="html" text="Examples:"}}}
         <form>
             Name: <input type="text" name="yourName" placeholder="Ichder" size="30" maxlength="30" autocomplete="off"><br>
             Password: <input type="password" name="pw" value="password" size="30" maxlength="10" autocomplete="new-password"><br>
@@ -112,44 +68,88 @@
         <form method="post" enctype="multipart/form-data">
             Your file: <input type="file" name="yourFile" accept="image/*">
         </form>
-    {{{ endHTMLex }}}
+        {{{ endCode }}}
 
-    <hr>
+        {{{ startHTMLex }}}
+            <form>
+                Name: <input type="text" name="yourName" placeholder="Ichder" size="30" maxlength="30" autocomplete="off"><br>
+                Password: <input type="password" name="pw" value="password" size="30" maxlength="10" autocomplete="new-password"><br>
+                Comment: <textarea name="cmt" rows="6" cols="50" maxlength="2500" wrap="soft">Multi line text field</textarea><br>
+                Choose:
+                <select name="takeOne">
+                    <option value="val1">HTML</option>
+                    <option value="val2">CSS</option>
+                    <option value="val3">JS</option>
+                </select>
+                <select multiple name="takeTwo" size="2" selected="val5">
+                    <option value="val4">HTML</option>
+                    <option value="val5">CSS</option>
+                    <option value="val6">JS</option>
+                </select>
+                <select multiple name="takeThree" size="6">
+                    <optgroup label="Group 1">
+                        <option value="val7">HTML</option>
+                        <option value="val8">CSS</option>
+                        <option value="val9">JS</option>
+                    </optgroup>
+                    <optgroup label="Group 2">
+                        <option value="val10">html</option>
+                        <option value="val11">css</option>
+                        <option value="val12">js</option>
+                    </optgroup>
+                </select></br>
+                Choose your radio:
+                <input type="radio" name="radio" value="r1" id="firstId">
+                <label for="firstId">First</label>
+                <input type="radio" name="radio" value="r2" id="secondId">
+                <label for="secondId">Second</label><br>
+                Choose your box:
+                <input type="checkbox" name="box" value="b1" id="BfirstId">
+                <label for="BfirstId">First</label>
+                <input type="checkbox" name="box" value="b2" id="BsecondId">
+                <label for="BsecondId">Second</label>
+            </form>
+            <form method="post" enctype="multipart/form-data">
+                Your file: <input type="file" name="yourFile" accept="image/*">
+            </form>
+        {{{ endHTMLex }}}
 
-    {{{ startCode lang="html" text="Examples:"}}}
-    <form id="form1">
-        Your text: <input type="text" name="yourText" value="text" size="20" maxlength="20">
-        <input type="submit" value="send">
-        <input type="reset" value="reset">
-        <button type="button">Click Me!</button>
-        <input type="hidden" value="hiddenValue" name="hiddenData">
-    </form>
-    <button type="button" form="form1">I'm outside of a form!</button>
-    {{{ endCode }}}
+        <hr>
 
-    {{{ startHTMLex }}}
+        {{{ startCode lang="html" text="Examples:"}}}
         <form id="form1">
             Your text: <input type="text" name="yourText" value="text" size="20" maxlength="20">
             <input type="submit" value="send">
             <input type="reset" value="reset">
             <button type="button">Click Me!</button>
-            <!-- Well, you can't see it ;)
-            <input type="hidden" value="hiddenValue" name="hiddenData"> -->
+            <input type="hidden" value="hiddenValue" name="hiddenData">
         </form>
         <button type="button" form="form1">I'm outside of a form!</button>
-    {{{ endHTMLex }}}
+        {{{ endCode }}}
 
-    And much more input types ...
+        {{{ startHTMLex }}}
+            <form id="form1">
+                Your text: <input type="text" name="yourText" value="text" size="20" maxlength="20">
+                <input type="submit" value="send">
+                <input type="reset" value="reset">
+                <button type="button">Click Me!</button>
+                <!-- Well, you can't see it ;)
+                <input type="hidden" value="hiddenValue" name="hiddenData"> -->
+            </form>
+            <button type="button" form="form1">I'm outside of a form!</button>
+        {{{ endHTMLex }}}
 
-    Considerable:
-    <ol>
-        <li>{{{ htmlCode text="<fieldset>" }}} to group formula elements</li>
-        <li>{{{ htmlCode text="<progess>" }}} show progress for the form</li>
-        <li>{{{ htmlCode text="tabindex" }}} for the tab sequence</li>
-        <li>{{{ htmlCode text="required" }}}</li>
-        <li>valid input? show it the user</li>
-        <li>{{{ htmlCode text="<datalist>" }}} to list suggestions</li>
-    </ol>
+        And much more input types ...
 
+        Considerable:
+        <ol>
+            <li>{{{ htmlCode text="<fieldset>" }}} to group formula elements</li>
+            <li>{{{ htmlCode text="<progess>" }}} show progress for the form</li>
+            <li>{{{ htmlCode text="tabindex" }}} for the tab sequence</li>
+            <li>{{{ htmlCode text="required" }}}</li>
+            <li>valid input? show it the user</li>
+            <li>{{{ htmlCode text="<datalist>" }}} to list suggestions</li>
+        </ol>
+    </main>
     {{> article_footer author="Simon Oczadly" date="10.04.2018"}}
 </article>

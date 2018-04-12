@@ -1,9 +1,6 @@
-* {
-    color: antiqueWhite;
-}
-
 body {
     background-color: #1C1F26;
+    color: antiqueWhite;
 }
 
 header {
@@ -18,12 +15,20 @@ nav {
 }
 
 main {
-    margin: 25px auto;
-    width: 900px;
+    margin: 25px auto 0;
+    width: 800px;
+}
+
+article main {
+    width: initial;
 }
 
 footer {
     background-color: #13171F;
+}
+
+header, footer {
+    padding: 25px;
 }
 
 article {
@@ -66,10 +71,6 @@ figcaption {
     padding: 5px 25px;
 }
 
-header, footer {
-    padding: 5px;
-}
-
 article>header {
     padding: 5px 5px 5px 10px;
     margin-bottom: 25px;
@@ -94,11 +95,11 @@ nav li {
     display: inline-block;
 }
 
-span {
+/* span {
     display: inline;
     margin: 0;
     padding: 0;
-}
+} */
 
 #footer-page {
     margin: 50px auto 0 auto;
@@ -144,18 +145,17 @@ pre {
     display: none;
 }
 
+
+.no-css {
+    /* all: initial; */
+}
+
 .html-example {
     border-style: dashed;
     border-width: 1px;
     background-color: white;
     margin-bottom: 25px;
-}
-
-.no-css {
-    all: initial;
-    * {
-      all: initial;
-    }
+    color: black;
 }
 
 .test-border {
@@ -179,4 +179,11 @@ a:link, a:visited {
 a:hover {
     color: #d17a34;
     text-decoration: none;
+}
+
+#go-top {
+    position: fixed;
+    bottom: 25px;
+    right: 25px;
+    font-size: 40pt;
 }
