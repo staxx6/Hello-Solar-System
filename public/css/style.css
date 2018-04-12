@@ -49,13 +49,6 @@ h1, h2 {
     color: #FFC338;
 }
 
-/* img {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    margin-bottom: 25px;
-} */
-
 figure {
     margin: 0 auto;
     display: inline-block;
@@ -151,11 +144,11 @@ pre {
 }
 
 .html-example {
-    border-style: dashed;
-    border-width: 1px;
-    background-color: white;
+    border: dashed antiqueWhite 1px;
+    padding: 5px;
+    background-color: #2d2d2d;
     margin-bottom: 25px;
-    color: black;
+    color: antiqueWhite;
 }
 
 .test-border {

@@ -1,9 +1,5 @@
 <article>
-    <div class="title" id="article-or-section-and-aside">
-        <h2>Article or Section</h2>
-        <h4>> HTML</h4>
-        <span class="go-top"><a href="#">&#xe110;</a></span>
-    </div>
+    {{> article_header title="Article, section and aside" id="article-section-aside" lang="HTML"}}
 
     <p>A {{{ htmlCode text="<section>" }}} is used to group different {{{ htmlCode text="<article>" }}} into different
         purposes or subjects, or to define the different sections of a single {{{ htmlCode text="<article>" }}}.</p>
@@ -43,10 +39,11 @@
             </article>
     {{{ endCode }}}
 
-    <section id="article-or-section-source" class="source">
-        Source:
-        <ol>
-            <li><a href="https://stackoverflow.com/a/24764861">Picture: https://stackoverflow.com/a/24764861</a></li>
-        </ol>
-    </section>
+    {{> article_footer author="Simon Oczadly" date="10.04.2018"
+    sources="
+        [{
+            \"des\": \"Picture:\",
+            \"link\": \"https://stackoverflow.com/a/24764861\"
+        }]
+    "}}
 </article>
