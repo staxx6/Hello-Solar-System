@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Hello 3 column site</title>
+        <link rel="icon" size="16x16" href="../public/favicon.ico">
+
+        <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+        <meta name="description" content="Collection of Web-Stuff creation">
+
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+        <style>
+            header, footer {
+                text-align: center;
+            }
+            header, footer {
+                background-color: grey;
+            }
+            nav {
+                background-color: lightgrey;
+            }
+            #mainnav {
+                float: left;
+                margin: 0;
+                border: 0;
+                padding: 5px;
+                width: 160px;
+            }
+            #sidebar {
+                float: right;
+                padding: 5px;
+                width: 210px;
+            }
+            #content {
+                margin-right: 220px;
+                margin-left: 170px;
+                padding: 10px;
+            }
+            #wrapper {
+                overflow: auto;
+                min-width: 660px;
+                max-width: 60em;
+            }
+            .clear { clear: both; }
+            .warning {
+                color: red;
+            }
+        </style>
+    </head>
+    <body>
+        <header>
+            3 column with float positioning
+        </header>
+        <nav id="mainnav">
+            <h3>Navi</h3>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Blog</a></li>
+                <li><a href="#">Links</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Kontakt</a></li>
+            </ul>
+        </nav>
+        <aside id="sidebar">
+            <h3>Sidebar</h3>
+            <p>
+                Lorem ipsum dolor sit amet, consetetur sadipscing elitr,
+                sed diam nonumy eirmod tempor invidunt.
+            </p>
+            <ul>
+                <li><a href="#">Link 1</a></li>
+                <li><a href="#">Link 2</a></li>
+                <li><a href="#">Link 3</a></li>
+            </ul>
+            <p>
+                Lorem ipsum dolor sit amet, consetetur sadipscing elitr,
+                sed diam nonumy eirmod tempor invidunt.
+            </p>
+        </aside>
+        <div id="wrrapper">
+            <main id="content">
+                <article>
+                    <h1>Article 1</h1>
+                    <p>
+                        Lorem ipsum dolor sit amet, consetetur sadipscing elitr,
+                        sed diam nonumy eirmod tempor invidunt ut labore et dolore
+                        magna aliquyam erat, sed diam voluptua. At vero eos et accusam
+                        et justo duo dolores et ea rebum. Stet clita kasd gubergren, no
+                        sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum
+                        dolor sit amet, consetetur sadipscing elitr, sed diam nonumy
+                        eirmod tempor invidunt ut labore et dolore magna aliquyam erat,
+                        sed diam voluptua. At vero eos et accusam et justo duo dolores
+                        et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus
+                        est Lorem ipsum dolor sit amet.
+                    </p>
+                </article>
+                <article>
+                    <h1>Article 2</h1>
+                    <p>
+                        Lorem ipsum dolor sit amet, consetetur sadipscing elitr,
+                        sed diam nonumy eirmod tempor invidunt ut labore et dolore
+                        magna aliquyam erat, sed diam voluptua. At vero eos et accusam
+                        et justo duo dolores et ea rebum. Stet clita kasd gubergren, no
+                        sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum
+                        dolor sit amet, consetetur sadipscing elitr, sed diam nonumy
+                        eirmod tempor invidunt ut labore et dolore magna aliquyam erat,
+                        sed diam voluptua. At vero eos et accusam et justo duo dolores
+                        et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus
+                        est Lorem ipsum dolor sit amet.
+                    </p>
+                </article>
+            </main>
+        </div>
+        <footer class="clear">
+            Footer - <span class="warning">Footer could be over the sidebar!</span>
+        </footer>
+    </body>
+</html>

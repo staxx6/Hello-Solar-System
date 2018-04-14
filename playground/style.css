@@ -1,0 +1,180 @@
+@charset "UTF-8";
+
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+#wrapper {
+    margin: 5px auto;
+    width: 960px;
+}
+
+header, footer {
+    border: 1px solid black;
+    padding: 5px;
+    text-align: center;
+    background-color: sienna;
+    color: white;
+    font-size: 120%;
+}
+
+#mainnav {
+    float: left;
+    margin-top: 5px;
+    padding: 2% 2%;
+    width: 16%;
+}
+
+#sidebar {
+    float: right;
+    margin-top: 5px;
+    padding: 2% 2%;
+    width: 20%;
+}
+
+main {
+    float: left;
+    padding: 0 2%;
+    margin-top: 5px;
+    width: 52%;
+}
+
+.clear {
+    clear: both;
+}
+
+article img {
+    float: left;
+    margin: 0 10px 10px 0;
+    max-width: 30%;
+    height: auto;
+}
+
+article {
+    padding: 2px;
+    margin-bottom: 5px;
+    width: 97%;
+    background: lightblue;
+}
+
+article h1 {
+    background-color: burlywood;
+    border: 1px solid black;
+    font-size: 120%;
+    padding: 3px;
+}
+
+article p {
+    border: 1px solid black;
+    border-top: 0px;
+    padding: 6px;
+}
+
+nav ul li {
+    list-style: none;
+    margin-left: 0.6em;
+    margin-top: 0.4em;
+}
+
+nav h3 {
+    background-color: sandybrown;
+    border: 1px solid black;
+    font-size: 120%;
+    padding: 3px;
+}
+
+nav ul {
+    border: 1px solid black;
+    border-top: 0px;
+    padding: 5px;
+}
+
+aside h3 {
+    background-color: sandybrown;
+    border: 1px solid black;
+    font-size: 120%;
+    padding: 3px;
+}
+
+aside ul {
+    margin: 0.5em 0 0.5em 1.6em;
+}
+
+@media only screen and (max-width: 768px) {
+    #wrapper {
+        width: 98%;
+    }
+
+    #mainnav {
+        padding: 1%;
+        text-align: center;
+        width: 98%;
+        background-color: peachpuff;
+        border: 1px solid black;
+    }
+
+    nav ul {
+        margin-left: 0;
+        padding-left: 0;
+        display: inline;
+        border: 0;
+    }
+
+    nav ul li {
+        margin-left: 0;
+        padding: 3px 10px;
+        border-left: 1px solid #000;
+        list-style: none;
+        display: inline;
+    }
+
+    nav h3 {
+        margin: 0 10px 0 0;
+        display: inline;
+    }
+
+    #sidebar {
+        float: left;
+        margin-top: 5px;
+        padding: 2% 2%;
+        width: 30%;
+    }
+
+    main {
+        float: right;
+        padding: 2% 2%;
+        margin: 0;
+        width: 62%;
+    }
+
+    article {
+        width: 98%;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    #wrapper {
+        margin: 5px auto;
+        width: 97%;
+    }
+
+    nav ul li: first-child {
+        margin-left: 20px;
+        border-left: none;
+        list-style: none;
+        display: inline;
+    }
+
+    #sidebar {
+        padding: 1%;
+        width: 98%;
+
+        margin: 0 0 5px 0;
+    }
+
+    main {
+        width: 98%;
+    }
+}

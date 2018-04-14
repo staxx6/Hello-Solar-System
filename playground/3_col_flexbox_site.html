@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Hello 3 column site</title>
+        <link rel="icon" size="16x16" href="../public/favicon.ico">
+
+        <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+        <meta name="description" content="Collection of Web-Stuff creation">
+
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+        <style>
+            body {
+                margin: 0 auto;
+                padding: 0;
+                border: 0;
+                min-width: 660px;
+                max-height: 60em;
+            }
+            #row-wrapper {
+                display: flex;
+                flex-direction: row;
+            }
+            header, footer {
+                padding: 10px;
+                text-align: center;
+                background-color: grey;
+            }
+            #content {
+                flex: 1;
+                padding: 10px;
+            }
+            #mainnav {
+                flex: 0 0 160px;
+                padding: 10px;
+                border-right: 1px solid black;
+                background-color: lightgrey;
+            }
+            #sidebar {
+                flex: 0 0 210px;
+                padding: 10px;
+                border-left: 1px solid black;
+                background-color: orange;
+            }
+            .warning {
+                color: red;
+            }
+        </style>
+    </head>
+    <body>
+        <header>
+            3 column with flex positioning
+        </header>
+        <div id="row-wrapper">
+            <nav id="mainnav">
+                <h3>Navi</h3>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Blog</a></li>
+                    <li><a href="#">Links</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Kontakt</a></li>
+                </ul>
+            </nav>
+            <main id="content">
+                <article>
+                    <h1>Article 1</h1>
+                        <p>
+                        Lorem ipsum dolor sit amet, consetetur sadipscing elitr,
+                        sed diam nonumy eirmod tempor invidunt ut labore et dolore
+                        magna aliquyam erat, sed diam voluptua. At vero eos et accusam
+                        et justo duo dolores et ea rebum. Stet clita kasd gubergren, no
+                        sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum
+                        dolor sit amet, consetetur sadipscing elitr, sed diam nonumy
+                        eirmod tempor invidunt ut labore et dolore magna aliquyam erat,
+                        sed diam voluptua. At vero eos et accusam et justo duo dolores
+                        et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus
+                        est Lorem ipsum dolor sit amet.
+                        </p>
+                </article>
+                <article>
+                    <h1>Article 2</h1>
+                        <p>
+                        Lorem ipsum dolor sit amet, consetetur sadipscing elitr,
+                        sed diam nonumy eirmod tempor invidunt ut labore et dolore
+                        magna aliquyam erat, sed diam voluptua. At vero eos et accusam
+                        et justo duo dolores et ea rebum. Stet clita kasd gubergren, no
+                        sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum
+                        dolor sit amet, consetetur sadipscing elitr, sed diam nonumy
+                        eirmod tempor invidunt ut labore et dolore magna aliquyam erat,
+                        sed diam voluptua. At vero eos et accusam et justo duo dolores
+                        et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus
+                        est Lorem ipsum dolor sit amet.
+                        </p>
+                </article>
+            </main>
+            <aside id="sidebar">
+                <h3>Sidebar</h3>
+                <p>
+                    Lorem ipsum dolor sit amet, consetetur sadipscing elitr,
+                    sed diam nonumy eirmod tempor invidunt.
+                </p>
+                <ul>
+                    <li><a href="#">Link 1</a></li>
+                    <li><a href="#">Link 2</a></li>
+                    <li><a href="#">Link 3</a></li>
+                </ul>
+                <p>
+                    Lorem ipsum dolor sit amet, consetetur sadipscing elitr,
+                    sed diam nonumy eirmod tempor invidunt.
+                </p>
+            </aside>
+        </div>
+        <footer class="clear">
+            Footer
+        </footer>
+    </body>
+</html>
