@@ -1,0 +1,34 @@
+<article>
+    {{> article_header title="Fonts" id="fonts" lang="CSS"}}
+
+    {{{ startCode lang="css" text="Example"}}}
+        #box1 {
+            background-color: lightblue;
+            border: 3px solid;
+            border-color: yellow green blue red;
+            margin: 5px;
+        }
+    {{{ endCode }}}
+
+    {{{ startHTMLex }}}
+        <style>
+            #fonts {
+                font-family: Arial, Verdana, sans-serif;
+            }
+        </style>
+        <p>
+            <span id="fonts">
+                Hello, Solar System!
+            </span>
+        </p>
+    {{{ endHTMLex }}}
+
+    Mentionable:
+    <ol>
+        <li>{{{ htmlCode text="@font-face { font-family: NiceFont, Arial; src: url('path') format('truetype'); }" }}}</li>
+        <li>{{{ htmlCode text="font-size: 1rem;" }}} Use 1rem (or 100% or 1em) in body tag</li>
+        <li>{{{ htmlCode text="vertical-align: left" }}} not for {{{ htmlCode text="<p> | <div>" }}}</li>
+    </ol>
+
+    {{> article_footer author="Simon Oczadly" date="10.04.2018"}}
+</article>

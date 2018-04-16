@@ -1,0 +1,16 @@
+<article>
+    {{> article_header title="Selectors" id="selectors" lang="js"}}
+
+    {{{ startCode lang="js" text="Selectors:"}}}
+        let element = document.getElementByID("id");
+        if (element) {
+            let text = element.innerHTML;
+            text += "stuff";
+            element.innerHTML = element;
+        }
+
+
+    {{{ endCode }}}
+
+    {{> article_footer author="Simon Oczadly" date="16.04.2018"}}
+</article>
