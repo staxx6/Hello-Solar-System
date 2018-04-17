@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Hello 2 column site</title>
+        <link rel="icon" size="16x16" href="favicon.ico">
+
+        <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+        <meta name="description" content="Collection of Web-Stuff creation">
+
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    </head>
+    <body>
+        <heder>
+
+        </heder>
+        <nav>
+
+        </nav>
+        <aside>
+
+
+        </aside>
+        <main>
+            <p id="mainarticle">Some paragraph</p>
+            <button id="but01">Change color</button>
+            <script>
+                let but = document.getElementById("but01");
+                let ele = document.getElementById("mainarticle");
+                but.addEventListener("click", changeColor(ele));
+                let changeText = () => {
+                    ele.innerHTML = "New Text";
+                }
+                but.addEventListener("click", changeText);
+                // but.addEventListener("click", () => ele.innerHTML = "New Text");
+                // but.addEventListener("mouseover", myborder(ele));
+                // but.addEventListener("mouseout", noborder(ele));
+
+                function changeColor(ele) {
+                    if (ele.style.color === "white") {
+                        ele.style.color = "black";
+                        ele.style.background = "white";
+                        document.getElementById("but01").onclick = null;
+                    } else {
+                        ele.style.color = "white";
+                        ele.style.background = "blue";
+                    }
+                }
+
+
+            </script>
+
+        </main>
+        <footer>
+
+        </footer>
+    </body>
+</html>
