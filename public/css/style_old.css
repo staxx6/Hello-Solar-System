@@ -1,0 +1,182 @@
+body {
+    background-color: #1C1F26;
+    color: antiqueWhite;
+}
+
+header {
+    background-color: #020E18;
+    padding: 10px;
+}
+
+nav {
+    padding: 15px 3px 3px 2px;
+    margin-bottom: 25px;
+    background-color: #13171F;
+}
+
+main {
+    margin: 25px auto 0;
+    width: 800px;
+}
+
+article main {
+    width: initial;
+}
+
+footer {
+    background-color: #13171F;
+}
+
+header, footer {
+    padding: 25px;
+}
+
+article {
+    background-color: #24262D  ;
+    padding: 10px;
+    margin: 25px 0 0 0;
+}
+
+h1 {
+    font-size: 32pt;
+}
+
+h2 {
+    font-size: 18pt;
+}
+
+h1, h2 {
+    color: #FFC338;
+}
+
+figure {
+    margin: 0 auto;
+    display: inline-block;
+    text-align: center;
+
+    /* border-style: dashed;
+    border-width: 1px;
+    border-color: blue; */
+}
+
+figcaption {
+    text-align: right;
+    padding: 5px 25px;
+}
+
+article>header {
+    padding: 5px 5px 5px 10px;
+    margin-bottom: 25px;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav a {
+    /* display: block; */
+    width: 60px;
+}
+
+nav p {
+    margin: 10px 0 0 0;
+}
+
+nav li {
+    display: inline-block;
+}
+
+/* span {
+    display: inline;
+    margin: 0;
+    padding: 0;
+} */
+
+#footer-page {
+    margin: 50px auto 0 auto;
+    padding: 25px;
+}
+
+.footer-article {
+
+}
+
+hr {
+    border: none;
+    height: 3px;
+    background-color: #999;
+}
+
+.listing-text {
+    margin-bottom: -4px;
+}
+
+.source {
+    margin: 0px 25px 0 0;
+    /* border-style: solid;
+    border-width: 1px; */
+}
+
+.code {
+    width: 100%;
+    margin: 0px 0 20px 0;
+}
+
+pre {
+    max-height: 750px;
+}
+
+.code-html {
+    color: #e2777a;
+    background-color: rgb(45, 45, 45);
+    padding: 1px 2px 1px 2px;
+}
+
+.hide {
+    display: none;
+}
+
+
+.no-css {
+    /* all: initial; */
+}
+
+.html-example {
+    border: dashed antiqueWhite 1px;
+    padding: 5px;
+    background-color: #2d2d2d;
+    margin-bottom: 25px;
+    color: antiqueWhite;
+}
+
+.test-border {
+    border-style: dashed;
+    border-width: 1px;
+}
+
+.center {
+    margin: 0 auto;
+    text-align: center;
+}
+
+.go-top {
+    /* float: right; */
+}
+
+a:link, a:visited {
+    color: #b7580b;
+}
+
+a:hover {
+    color: #d17a34;
+    text-decoration: none;
+}
+
+#go-top {
+    position: fixed;
+    bottom: 25px;
+    right: 25px;
+    font-size: 40pt;
+}
